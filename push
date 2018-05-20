@@ -1,0 +1,6 @@
+#!/bin/bash
+
+git status
+git add *
+git commit -m "[auto] Saving Game and Engine binaries"
+git push origin dev
