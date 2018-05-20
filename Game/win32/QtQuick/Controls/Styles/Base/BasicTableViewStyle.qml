@@ -44,6 +44,7 @@ import QtQuick.Controls.Private 1.0
 /*!
     \qmltype BasicTableViewStyle
     \internal
+    \inqmlmodule QtQuick.Controls.Styles
     \inherits ScrollViewStyle
     \qmlabstract
 */
@@ -145,7 +146,7 @@ ScrollViewStyle {
             anchors.verticalCenter: parent.verticalCenter
             anchors.verticalCenterOffset: 1
             elide: styleData.elideMode
-            text: styleData.value !== undefined ? styleData.value : ""
+            text: styleData.value !== undefined ? styleData.value.toString() : ""
             color: styleData.textColor
             renderType: Settings.isMobile ? Text.QtRendering : Text.NativeRendering
         }

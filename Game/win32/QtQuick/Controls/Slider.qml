@@ -46,7 +46,6 @@ import QtQuick.Controls.Private 1.0
     \inqmlmodule QtQuick.Controls
     \since 5.1
     \ingroup controls
-    \inherits QtQuickControls1::Control
     \brief Provides a vertical or horizontal slider control.
 
     \image slider.png
@@ -172,14 +171,26 @@ Control {
     */
     property bool tickmarksEnabled: false
 
+    /*!
+        \qmlproperty bool Slider::wheelEnabled
+
+        This property determines whether the control handles wheel events.
+        The default value is \c true.
+
+        \since QtQuick.Controls 1.6
+    */
+    property alias wheelEnabled: wheelarea.enabled
+
     /*! \internal */
     property bool __horizontal: orientation === Qt.Horizontal
 
     /*! \internal
         The extra arguments positionAtMinimum and positionAtMaximum are there to force
-        re-evaluation of the handle position when the constraints change (QTBUG-41255).
+        re-evaluation of the handle position when the constraints change (QTBUG-41255),
+        and the same for range.minimumValue (QTBUG-51765) and range.maximumValue (QTBUG-63354).
     */
-    property real __handlePos: range.valueForPosition(__horizontal ? fakeHandle.x : fakeHandle.y, range.positionAtMinimum, range.positionAtMaximum)
+    property real __handlePos: range.valueForPosition(__horizontal ? fakeHandle.x : fakeHandle.y,
+        range.positionAtMinimum, range.positionAtMaximum, range.minimumValue, range.maximumValue)
 
     activeFocusOnTab: true
 
@@ -263,7 +274,7 @@ Control {
 
         onPositionChanged: {
             if (pressed)
-                updateHandlePosition(mouse, preventStealing)
+                updateHandlePosition(mouse, !Settings.hasTouchScreen || preventStealing)
 
             var point = mouseArea.mapToItem(fakeHandle, mouse.x, mouse.y)
             handleHovered = fakeHandle.contains(Qt.point(point.x, point.y))
@@ -309,6 +320,8 @@ Control {
     WheelArea {
         id: wheelarea
         anchors.fill: parent
+        verticalValue: slider.value
+        horizontalValue: slider.value
         horizontalMinimumValue: slider.minimumValue
         horizontalMaximumValue: slider.maximumValue
         verticalMinimumValue: slider.minimumValue

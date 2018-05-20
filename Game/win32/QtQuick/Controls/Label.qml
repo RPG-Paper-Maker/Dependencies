@@ -37,7 +37,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.2
+import QtQuick 2.6
 import QtQuick.Controls 1.2
 import QtQuick.Controls.Private 1.0
 
@@ -46,7 +46,6 @@ import QtQuick.Controls.Private 1.0
     \inqmlmodule QtQuick.Controls
     \since 5.1
     \ingroup controls
-    \inherits QtQuick::Text
     \brief A text label.
 
     \image label.png

@@ -46,7 +46,6 @@ import QtQuick.Controls.Private 1.0
     \inqmlmodule QtQuick.Controls
     \since 5.1
     \ingroup controls
-    \inherits QtQuickControls1::Control
     \brief Provides a spin box control.
 
     \image spinbox.png
@@ -274,6 +273,7 @@ Control {
 
     Accessible.name: input.text
     Accessible.role: Accessible.SpinBox
+    Accessible.editable: true
 
     MouseArea {
         id: mouseArea

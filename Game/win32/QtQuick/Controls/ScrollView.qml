@@ -48,7 +48,6 @@ import QtQuick.Controls.Styles 1.1
     \since  5.1
     \ingroup views
     \ingroup controls
-    \inherits QtQuick::FocusScope
     \brief Provides a scrolling view within another Item.
 
     \image scrollview.png
@@ -282,9 +281,21 @@ FocusScope {
 
             horizontalMinimumValue: 0
             horizontalMaximumValue: flickableItem ? flickableItem.contentWidth - viewport.width : 0
+            onHorizontalMaximumValueChanged: {
+                wheelArea.horizontalRecursionGuard = true
+                //if horizontalMaximumValue changed, horizontalValue may be actually synced with
+                wheelArea.horizontalValue = flickableItem.contentX - flickableItem.originX;
+                wheelArea.horizontalRecursionGuard = false
+            }
 
             verticalMinimumValue: 0
             verticalMaximumValue: flickableItem ? flickableItem.contentHeight - viewport.height + __viewTopMargin : 0
+            onVerticalMaximumValueChanged: {
+                wheelArea.verticalRecursionGuard = true
+                //if verticalMaximumValue changed, verticalValue may be actually synced with
+                wheelArea.verticalValue = flickableItem.contentY - flickableItem.originY;
+                wheelArea.verticalRecursionGuard = false
+            }
 
             // The default scroll speed for typical angle-based mouse wheels. The value
             // comes originally from QTextEdit, which sets 20px steps by default, as well as
