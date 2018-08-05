@@ -1,5 +1,5 @@
 ================================================================
-RPG Paper Maker Copyright (C) 2017 Marie Laporte
+RPG Paper Maker Copyright (C) 2017-2018 Marie Laporte
 
     This file is part of RPG Paper Maker.
 
@@ -21,7 +21,10 @@ If launching the engine for the first time:
 
 * Open a terminal in this folder
 * Enter
+    sudo apt-get install libstdc++6
+    sudo apt-get install qtdeclarative5-qtmultimedia-plugin
 	chmod u+x run.sh
+    chmod u+x RPG-Paper-Maker
 * Enter
 	./run.sh
 
