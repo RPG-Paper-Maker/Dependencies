@@ -38,7 +38,7 @@
 ****************************************************************************/
 
 import QtQuick 2.0
-import QtMultimedia 5.9
+import QtMultimedia 5.6
 
 /*!
     \qmltype Video
@@ -382,34 +382,6 @@ Item {
         Setting to \c true also sets \l autoLoad to \c true. The default is \c false.
     */
     property alias autoPlay:        player.autoPlay
-
-    /*!
-        \qmlproperty int Video::notifyInterval
-
-        The interval at which notifiable properties will update.
-
-        The notifiable properties are \l position and \l bufferProgress.
-
-        The interval is expressed in milliseconds, the default value is 1000.
-
-        \since 5.9
-    */
-    property alias notifyInterval:  player.notifyInterval
-
-    /*!
-        \qmlproperty int Video::loops
-
-        This property holds the number of times the media is played. A value of \c 0 or \c 1 means
-        the media will be played only once; set to \c MediaPlayer.Infinite to enable infinite looping.
-
-        The value can be changed while the media is playing, in which case it will update
-        the remaining loops to the new value.
-
-        The default is \c 1.
-
-        \since 5.9
-    */
-    property alias loops:           player.loops
 
     /*!
         \qmlsignal Video::paused()
