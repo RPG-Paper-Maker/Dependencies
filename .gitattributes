@@ -1,5 +1,0 @@
-Game filter=lfs diff=lfs merge=lfs -text
-Game.exe filter=lfs diff=lfs merge=lfs -text
-Game.app/* filter=lfs diff=lfs merge=lfs -text
-Game/osx/Game.app/Contents/Frameworks/Electron*Framework.framework/Versions/A/Electron*Framework filter=lfs diff=lfs merge=lfs -text
-Game/osx/Game.app/Contents/Frameworks/*/Versions/A/* filter=lfs diff=lfs merge=lfs -text
