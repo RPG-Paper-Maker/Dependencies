@@ -1,3 +1,4 @@
 Game/osx/Game.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework
 Game/linux/Game
-Game/win32/Game.exe
+Game/winx64/Game.exe
+Game/winx86/Game.exe
