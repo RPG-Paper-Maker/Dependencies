@@ -14,3 +14,6 @@ export { THREE };
  */
 import { Howl } from '../Libs/howler.js';
 export { Howl };
+
+import localforage from '../Libs/localforage/localforage.js';
+export { localforage };
