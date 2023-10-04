@@ -57,7 +57,7 @@ class Platform {
      *  @param {Error} e - The error message
      */
     static showError(e) {
-        console.alert(e.message + Constants.STRING_NEW_LINE + e.stack, false);
+        alert(e.message + Constants.STRING_NEW_LINE + e.stack, false);
     }
     /**
      *  Show an error message.
@@ -69,7 +69,7 @@ class Platform {
     static showErrorMessage(msg, displayDialog = true) {
         if (firstError) {
             firstError = false;
-            console.alert(msg);
+            alert(msg);
         }
     }
     /**
