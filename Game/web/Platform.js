@@ -28,10 +28,30 @@ class Platform {
 		throw new Error('This class is static.');
 	}
 	static async loadFile(path, forcePath = false) {
+		if (Platform.IS_DESKTOP) {
+			return await window.ipcRenderer.invoke('read-file', path);
+		}
 		if (!forcePath && Platform.WEB_DEV) {
-			return await localforage.getItem(`projects/${window.rpgPaperMakerProjectName}/${path}`);
+			const file = await localforage.getItem(path);
+			return file === null ? null : file.c;
 		}
 		return await IO.openFile(`/${path}`);
+	}
+	static async writeFile(path, content) {
+		const str = JSON.stringify(content);
+		if (Platform.IS_DESKTOP) {
+			return await window.ipcRenderer.invoke('create-file', path, str);
+		} else {
+			await localforage.setItem(path, { c: str });
+			const arr = path.split('/');
+			const fileName = arr.pop();
+			const folderPath = arr.join('/');
+			const folder = await localforage.getItem(folderPath);
+			if (folder) {
+				folder.fin.push(fileName);
+				await localforage.setItem(folderPath, folder);
+			}
+		}
 	}
 	/**
 	 *  Parse a JSON file
@@ -41,10 +61,10 @@ class Platform {
 		if (Platform.WEB_DEV) {
 			let content = await Platform.loadFile(path);
 			if (Datas.Settings.isProtected) {
-				content = atob(content.c);
+				content = atob(content);
 			}
 			try {
-				return JSON.parse(content.c);
+				return JSON.parse(content);
 			} catch (e) {
 				return {};
 			}
@@ -56,27 +76,32 @@ class Platform {
 	 *  @static
 	 */
 	static async loadSave(slot, path) {
-		if (localStorage.getItem('saves') === null) {
-			localStorage.setItem('saves', JSON.stringify({}));
+		if (Platform.WEB_DEV) {
+			const savesStr = await this.loadFile(path);
+			return savesStr === null ? null : JSON.parse(savesStr);
+		} else {
+			const savesStr = localStorage.getItem('saves');
+			let saves = savesStr === null ? {} : JSON.parse(savesStr);
+			let content = saves[slot];
+			if (content) {
+				return content;
+			}
+			return null;
 		}
-		let saves = JSON.parse(localStorage.getItem('saves'));
-		let content = saves[slot];
-		if (content) {
-			return content;
-		}
-		return null;
 	}
 	/**
 	 *  Register a save.
 	 *  @static
 	 */
 	static async registerSave(slot, path, json) {
-		if (localStorage.getItem('saves') === null) {
-			localStorage.setItem('saves', JSON.stringify({}));
+		if (Platform.WEB_DEV) {
+			await Platform.writeFile(path, json);
+		} else {
+			const savesStr = localStorage.getItem('saves');
+			const saves = savesStr === null ? {} : JSON.parse(savesStr);
+			saves[slot] = json;
+			localStorage.setItem('saves', JSON.stringify(saves));
 		}
-		let saves = JSON.parse(localStorage.getItem('saves'));
-		saves[slot] = json;
-		localStorage.setItem('saves', JSON.stringify(saves));
 	}
 	/**
 	 *  Show an error object.
@@ -111,8 +136,9 @@ class Platform {
 		);
 	}
 }
-Platform.WEB_DEV = !!window.rpgPaperMakerProjectName;
-Platform.ROOT_DIRECTORY = Platform.WEB_DEV ? '' : '.';
+Platform.WEB_DEV = !!window.rpgPaperMakerProjectLocation;
+Platform.IS_DESKTOP = !!window?.process?.versions?.electron;
+Platform.ROOT_DIRECTORY = Platform.WEB_DEV ? window.rpgPaperMakerProjectLocation + '/' : '.';
 Platform.screenWidth = document.body.clientWidth;
 var body = document.body,
 	html = document.documentElement;
@@ -131,8 +157,8 @@ Platform.canvas3D = document.getElementById('three-d');
 Platform.canvasHUD = document.getElementById('hud');
 Platform.canvasVideos = document.getElementById('video-container');
 Platform.canvasRendering = document.getElementById('rendering');
-Platform.ctx = Platform.canvasHUD.getContext('2d');
-Platform.ctxr = Platform.canvasRendering.getContext('2d');
+Platform.ctx = Platform.canvasHUD.getContext('2d', { willReadFrequently: true });
+Platform.ctxr = Platform.canvasRendering.getContext('2d', { willReadFrequently: true });
 /**
  *  Set window title.
  *  @static
@@ -161,7 +187,7 @@ Platform.quit = function () {
  *  @returns {Promise<boolean>}
  */
 Platform.fileExists = async function (path) {
-	return (await localforage.getItem(`projects/${window.rpgPaperMakerProjectName}/${path}`)) !== null;
+	return (await localforage.getItem(path)) !== null;
 };
 // Display error to main process
 window.onerror = function (msg, url, line, column, err) {
