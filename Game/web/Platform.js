@@ -29,7 +29,7 @@ class Platform {
 	}
 	static async loadFile(path, forcePath = false) {
 		if (Platform.IS_DESKTOP) {
-			return await window.ipcRenderer.invoke('read-file', path);
+			return await window.ipcRenderer.invoke('read-file', path, forcePath);
 		}
 		if (!forcePath && Platform.WEB_DEV) {
 			const file = await localforage.getItem(path);
@@ -178,7 +178,9 @@ Platform.setWindowSize = function (w, h, f) {};
  *  @static
  */
 Platform.quit = function () {
-	// TODO
+	if (Platform.IS_DESKTOP) {
+		window.ipcRenderer.invoke('close-game');
+	}
 };
 /**
  *  Check if a file exists.
