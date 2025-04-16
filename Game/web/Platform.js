@@ -1,5 +1,5 @@
 /*
-    RPG Paper Maker Copyright (C) 2017-2021 Wano
+    RPG Paper Maker Copyright (C) 2017-2025 Wano
 
     RPG Paper Maker engine is under proprietary license.
     This source code is also copyrighted.
@@ -8,10 +8,9 @@
     See RPG Paper Maker EULA here:
         http://rpg-paper-maker.com/index.php/eula.
 */
-import { Constants, IO } from './index.js';
 import { localforage } from '../Globals.js';
 import { Datas } from '../index.js';
-let firstError = true;
+import { Constants, IO } from './index.js';
 localforage.config({ name: 'RPGPaperMaker' });
 
 /**
@@ -109,7 +108,7 @@ class Platform {
 	 *  @param {Error} e - The error message
 	 */
 	static showError(e) {
-		alert(e.message + Constants.STRING_NEW_LINE + e.stack, false);
+		console.error(e.message + Constants.STRING_NEW_LINE + e.stack, false);
 	}
 	/**
 	 *  Show an error message.
@@ -119,10 +118,7 @@ class Platform {
 	 *  dialog box
 	 */
 	static showErrorMessage(msg, displayDialog = true) {
-		if (firstError) {
-			firstError = false;
-			alert(msg);
-		}
+		console.error(msg);
 	}
 	/**
 	 *  Check if there is a specific mode test (app args).
@@ -191,20 +187,5 @@ Platform.quit = function () {
 Platform.fileExists = async function (path) {
 	return (await localforage.getItem(path)) !== null;
 };
-// Display error to main process
-window.onerror = function (msg, url, line, column, err) {
-	if (firstError) {
-		firstError = false;
-		let str = url ? url + Constants.STRING_COLON + ' ' + line + Constants.STRING_NEW_LINE : '';
-		if (err.stack != null) {
-			str += err.stack;
-		} else if (err.message != null) {
-			str += err.message;
-		}
-		Platform.showErrorMessage(str);
-		throw err;
-	} else {
-		alert(err);
-	}
-};
+
 export { Platform };
