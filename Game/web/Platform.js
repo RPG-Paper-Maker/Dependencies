@@ -126,10 +126,7 @@ class Platform {
 	 *  @returns {boolean}
 	 */
 	static isModeTestNormal() {
-		return (
-			Platform.MODE_TEST !== Platform.MODE_TEST_BATTLE_TROOP &&
-			Platform.MODE_TEST !== Platform.MODE_TEST_SHOW_TEXT_PREVIEW
-		);
+		return true;
 	}
 }
 Platform.WEB_DEV = !!window.rpgPaperMakerProjectLocation;
@@ -146,7 +143,7 @@ Platform.screenHeight = Math.max(
 	html.offsetHeight
 );
 Platform.DESKTOP = false;
-Platform.MODE_TEST = '';
+Platform.MODE_TEST = window.battleTest;
 Platform.MODE_TEST_BATTLE_TROOP = 'battleTroop';
 Platform.MODE_TEST_SHOW_TEXT_PREVIEW = 'showTextPreview';
 Platform.canvas3D = document.getElementById('three-d');
