@@ -126,22 +126,19 @@ class Platform {
 	 *  @returns {boolean}
 	 */
 	static isModeTestNormal() {
-		return true;
+		return !Platform.IS_DESKTOP || Platform.MODE_TEST !== Platform.MODE_TEST_BATTLE_TROOP;
 	}
 }
 Platform.WEB_DEV = !!window.rpgPaperMakerProjectLocation;
 Platform.IS_DESKTOP = !!window?.process?.versions?.electron;
 Platform.ROOT_DIRECTORY = Platform.WEB_DEV ? window.rpgPaperMakerProjectLocation + '/' : '.';
-Platform.screenWidth = document.body.clientWidth;
+Platform.screenWidth = Platform.IS_DESKTOP ? window.screen.width : document.body.clientWidth;
 var body = document.body,
 	html = document.documentElement;
-Platform.screenHeight = Math.max(
-	body.scrollHeight,
-	body.offsetHeight,
-	html.clientHeight,
-	html.scrollHeight,
-	html.offsetHeight
-);
+Platform.screenHeight = Platform.IS_DESKTOP
+	? window.screen.height
+	: window.screenHeight ??
+	  Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 Platform.DESKTOP = false;
 Platform.MODE_TEST = window.battleTest;
 Platform.MODE_TEST_BATTLE_TROOP = 'battleTroop';
@@ -157,7 +154,11 @@ Platform.ctxr = Platform.canvasRendering.getContext('2d', { willReadFrequently: 
  *  @static
  *  @param {string} title - The title to display
  */
-Platform.setWindowTitle = function (title) {};
+Platform.setWindowTitle = function (title) {
+	if (Platform.IS_DESKTOP) {
+		window.ipcRenderer.invoke('change-window-title', title);
+	}
+};
 /**
  *  Set window size.
  *  @static
@@ -165,11 +166,11 @@ Platform.setWindowTitle = function (title) {};
  *  @param {number} h - The window height
  *  @param {boolean} f - Indicate if the window is fullscreen
  */
-Platform.setWindowSize = function (w, h, f) {};
-/**
- *  Quit app.
- *  @static
- */
+Platform.setWindowSize = function (w, h, f) {
+	if (Platform.IS_DESKTOP) {
+		window.ipcRenderer.invoke('change-window-size', w, h, f);
+	}
+};
 Platform.quit = function () {
 	if (Platform.IS_DESKTOP) {
 		window.ipcRenderer.invoke('close-game');
