@@ -8,7 +8,7 @@
     See RPG Paper Maker EULA here:
         http://rpg-paper-maker.com/index.php/eula.
 */
-import { localforage } from '../Globals.js';
+import localforage from '../Libs/localforage/localforage.js';
 import { Datas } from '../index.js';
 import { Constants, IO } from './index.js';
 localforage.config({ name: 'RPGPaperMaker' });
