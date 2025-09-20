@@ -9,7 +9,7 @@
         http://rpg-paper-maker.com/index.php/eula.
 */
 import localforage from '../Libs/localforage/localforage.js';
-import { Datas } from '../index.js';
+import { Data } from '../index.js';
 import { Constants, IO } from './index.js';
 localforage.config({ name: 'RPGPaperMaker' });
 
@@ -59,7 +59,7 @@ class Platform {
 	static async parseFileJSON(path) {
 		if (Platform.WEB_DEV) {
 			let content = await Platform.loadFile(path);
-			if (Datas.Settings.isProtected) {
+			if (Data.Settings.isProtected) {
 				content = atob(content);
 			}
 			try {
@@ -139,7 +139,6 @@ Platform.screenHeight = Platform.IS_DESKTOP
 	? window.screen.height
 	: window.screenHeight ??
 	  Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-Platform.DESKTOP = false;
 Platform.MODE_TEST = window.battleTest;
 Platform.MODE_TEST_BATTLE_TROOP = 'battleTroop';
 Platform.MODE_TEST_SHOW_TEXT_PREVIEW = 'showTextPreview';
