@@ -796,7 +796,35 @@
         "three.core.min.js",
         "three.module.min.js"
       ],
-      "localforage": {}
+      "localforage": {
+        "drivers": {
+          "files": [
+            "indexeddb.js",
+            "localstorage.js",
+            "websql.js"
+          ]
+        },
+        "files": [
+          "localforage.js"
+        ],
+        "utils": {
+          "files": [
+            "createBlob.js",
+            "executeCallback.js",
+            "executeTwoCallbacks.js",
+            "getCallback.js",
+            "idb.js",
+            "includes.js",
+            "isArray.js",
+            "isIndexedDBValid.js",
+            "isLocalStorageValid.js",
+            "isWebSQLValid.js",
+            "normalizeKey.js",
+            "promise.js",
+            "serializer.js"
+          ]
+        }
+      }
     },
     "Manager": {
       "files": [
