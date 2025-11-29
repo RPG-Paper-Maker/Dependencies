@@ -130,7 +130,7 @@ class Platform {
 	}
 }
 Platform.WEB_DEV = !!window.rpgPaperMakerProjectLocation;
-Platform.IS_DESKTOP = !!window?.process?.versions?.electron;
+Platform.IS_DESKTOP = !!window.ipcRenderer;
 Platform.ROOT_DIRECTORY = Platform.WEB_DEV ? window.rpgPaperMakerProjectLocation + '/' : 'build/';
 Platform.screenWidth = Platform.IS_DESKTOP ? window.screen.width : document.body.clientWidth;
 var body = document.body,
