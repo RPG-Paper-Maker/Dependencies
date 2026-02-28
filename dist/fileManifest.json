@@ -3,30 +3,31 @@
     "files": [
       "alpha-CjRbbULc.svg",
       "audio-DjBHBiYG.js",
-      "Editor-yhF5sCwW.js",
-      "Editor-YUQawH1i.css",
-      "Game-Ffz27Q2W.js",
+      "Editor-B7s8TpG1.js",
+      "Editor-Bi4F4SpO.css",
+      "Game-BJAajtnf.js",
       "howler-C0b5Wac2.js",
       "i18n-DuotUpqr.js",
       "icons-D6jrWAfK.js",
-      "index-Crmc7nmb.js",
+      "index-DV4JTEsQ.js",
       "index-kBtUKnFU.css",
       "jszip.min-V9DnQLUl.js",
       "MainMenuBar-D3WYoO2v.css",
-      "MainMenuBar-Dyot3GH2.js",
-      "PanelLoading-BKm7V_Nj.js",
-      "PanelMain-DCB18fMm.css",
-      "PanelMain-DvmJX0Xx.js",
-      "ProjectUpdater_3_0_0-Be7wEx-q.js",
-      "ProjectUpdater_3_0_1-zacykFjr.js",
-      "ProjectUpdater_3_0_19-BSbGlTR_.js",
-      "ProjectUpdater_3_0_22-C7Ej_X4r.js",
-      "ProjectUpdater_3_0_24-BL19HpZa.js",
-      "ProjectUpdater_3_0_26-BQbQ3VY9.js",
-      "ProjectUpdater_3_0_4-B0YwtU-9.js",
+      "MainMenuBar-jQPdyzk2.js",
+      "PanelLoading-D8Xalpsr.js",
+      "PanelMain-BuWilafG.js",
+      "PanelMain-CAdKDi92.css",
+      "ProjectUpdater_3_0_0-CFSQr9kv.js",
+      "ProjectUpdater_3_0_1-fc00x-8d.js",
+      "ProjectUpdater_3_0_19-B88POQxr.js",
+      "ProjectUpdater_3_0_22-D0O8XdNv.js",
+      "ProjectUpdater_3_0_24-CxmV4YwF.js",
+      "ProjectUpdater_3_0_26-80EoXr7S.js",
+      "ProjectUpdater_3_0_27-BZuEC5uL.js",
+      "ProjectUpdater_3_0_4-B7aydozQ.js",
       "redux-DUyiWGAh.js",
       "storage-C63B0eJD.js",
-      "three-Cq8iOwMd.js",
+      "three-Bq3Oe-ko.js",
       "toastify-FxbLyBwW.js",
       "vendor-C6Febm84.js",
       "zip-BukT48CU.js"
@@ -239,7 +240,8 @@
             "sewers.png",
             "sidewalk.png",
             "snow-no-borders.png",
-            "snow.png"
+            "snow.png",
+            "stairs.png"
           ]
         },
         "Objects3D": {
@@ -437,6 +439,7 @@
     },
     "Shapes": {
       "Collisions": {},
+      "GLTF": {},
       "MTL": {},
       "OBJ": {
         "files": [
@@ -471,6 +474,7 @@
         "files": [
           "Battle1.mp3",
           "Battle2.mp3",
+          "BattleBoss1.mp3",
           "Dungeon1.mp3",
           "Dungeon2.mp3",
           "Field1.mp3",
