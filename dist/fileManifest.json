@@ -2,35 +2,35 @@
   "assets": {
     "files": [
       "alpha-CjRbbULc.svg",
-      "audio-DjBHBiYG.js",
-      "Editor-B7s8TpG1.js",
-      "Editor-Bi4F4SpO.css",
-      "Game-BJAajtnf.js",
-      "howler-C0b5Wac2.js",
-      "i18n-DuotUpqr.js",
-      "icons-D6jrWAfK.js",
-      "index-DV4JTEsQ.js",
+      "audio-B9ml2oe8.js",
+      "Editor-BtaGPH2x.css",
+      "Editor-Cx2onP2s.js",
+      "Game-2xfhfILl.js",
+      "howler-Dq7lkigH.js",
+      "i18n-DLu--s6S.js",
+      "icons-CueZRmd2.js",
+      "index-b1tB7rUx.js",
       "index-kBtUKnFU.css",
-      "jszip.min-V9DnQLUl.js",
+      "jszip.min-CMQN80ae.js",
+      "MainMenuBar-CKPe8NP6.js",
       "MainMenuBar-D3WYoO2v.css",
-      "MainMenuBar-jQPdyzk2.js",
-      "PanelLoading-D8Xalpsr.js",
-      "PanelMain-BuWilafG.js",
-      "PanelMain-CAdKDi92.css",
-      "ProjectUpdater_3_0_0-CFSQr9kv.js",
-      "ProjectUpdater_3_0_1-fc00x-8d.js",
-      "ProjectUpdater_3_0_19-B88POQxr.js",
-      "ProjectUpdater_3_0_22-D0O8XdNv.js",
-      "ProjectUpdater_3_0_24-CxmV4YwF.js",
-      "ProjectUpdater_3_0_26-80EoXr7S.js",
-      "ProjectUpdater_3_0_27-BZuEC5uL.js",
-      "ProjectUpdater_3_0_4-B7aydozQ.js",
-      "redux-DUyiWGAh.js",
-      "storage-C63B0eJD.js",
-      "three-Bq3Oe-ko.js",
-      "toastify-FxbLyBwW.js",
-      "vendor-C6Febm84.js",
-      "zip-BukT48CU.js"
+      "PanelLoading-DbZempcy.js",
+      "PanelMain-9FzbmatA.css",
+      "PanelMain-Bia_Rs_I.js",
+      "ProjectUpdater_3_0_0-JkXDR9KC.js",
+      "ProjectUpdater_3_0_1-D64W3X2X.js",
+      "ProjectUpdater_3_0_19-B98X8RZ1.js",
+      "ProjectUpdater_3_0_22-DSKbOJ4s.js",
+      "ProjectUpdater_3_0_24-CL4njVbK.js",
+      "ProjectUpdater_3_0_26-hufPXg_L.js",
+      "ProjectUpdater_3_0_27-BdOmXB2h.js",
+      "ProjectUpdater_3_0_4-ZSYzvmU2.js",
+      "redux-Ci1AGJDF.js",
+      "storage-BVPs3Vv2.js",
+      "three-DT2CxDXy.js",
+      "toastify-BWGsCvlG.js",
+      "vendor-CNWyb7wd.js",
+      "zip-W__qVA-W.js"
     ]
   },
   "BR": {
@@ -413,6 +413,7 @@
             "bush-haunted.png",
             "bush-snow.png",
             "bush.png",
+            "castle1.png",
             "cave1.png",
             "hedge-snow.png",
             "hedge.png",
@@ -800,621 +801,16 @@
     ],
     "Libs": {
       "examples": {
-        "fonts": {
-          "droid": {
-            "files": [
-              "droid_sans_bold.typeface.json",
-              "droid_sans_mono_regular.typeface.json",
-              "droid_sans_regular.typeface.json",
-              "droid_serif_bold.typeface.json",
-              "droid_serif_regular.typeface.json",
-              "NOTICE",
-              "README.txt"
-            ]
-          },
-          "files": [
-            "gentilis_bold.typeface.json",
-            "gentilis_regular.typeface.json",
-            "helvetiker_bold.typeface.json",
-            "helvetiker_regular.typeface.json",
-            "LICENSE",
-            "optimer_bold.typeface.json",
-            "optimer_regular.typeface.json",
-            "README.md"
-          ],
-          "MPLUSRounded1c": {
-            "files": [
-              "MPLUSRounded1c-Regular.typeface.json.zip",
-              "OFL.txt"
-            ]
-          },
-          "ttf": {
-            "files": [
-              "kenpixel.ttf",
-              "README.md"
-            ]
-          }
-        },
         "jsm": {
-          "files": [
-            "Addons.js"
-          ],
-          "animation": {
-            "files": [
-              "AnimationClipCreator.js",
-              "CCDIKSolver.js"
-            ]
-          },
-          "capabilities": {
-            "files": [
-              "WebGL.js",
-              "WebGPU.js"
-            ]
-          },
-          "controls": {
-            "files": [
-              "ArcballControls.js",
-              "DragControls.js",
-              "FirstPersonControls.js",
-              "FlyControls.js",
-              "MapControls.js",
-              "OrbitControls.js",
-              "PointerLockControls.js",
-              "TrackballControls.js",
-              "TransformControls.js"
-            ]
-          },
-          "csm": {
-            "files": [
-              "CSM.js",
-              "CSMFrustum.js",
-              "CSMHelper.js",
-              "CSMShader.js",
-              "CSMShadowNode.js"
-            ]
-          },
-          "curves": {
-            "files": [
-              "CurveExtras.js",
-              "NURBSCurve.js",
-              "NURBSSurface.js",
-              "NURBSUtils.js",
-              "NURBSVolume.js"
-            ]
-          },
-          "effects": {
-            "files": [
-              "AnaglyphEffect.js",
-              "AsciiEffect.js",
-              "OutlineEffect.js",
-              "ParallaxBarrierEffect.js",
-              "StereoEffect.js"
-            ]
-          },
-          "environments": {
-            "files": [
-              "DebugEnvironment.js",
-              "RoomEnvironment.js"
-            ]
-          },
-          "exporters": {
-            "files": [
-              "DRACOExporter.js",
-              "EXRExporter.js",
-              "GLTFExporter.js",
-              "KTX2Exporter.js",
-              "OBJExporter.js",
-              "PLYExporter.js",
-              "STLExporter.js",
-              "USDZExporter.js"
-            ]
-          },
-          "geometries": {
-            "files": [
-              "BoxLineGeometry.js",
-              "ConvexGeometry.js",
-              "DecalGeometry.js",
-              "ParametricFunctions.js",
-              "ParametricGeometry.js",
-              "RoundedBoxGeometry.js",
-              "TeapotGeometry.js",
-              "TextGeometry.js"
-            ]
-          },
-          "gpgpu": {
-            "files": [
-              "BitonicSort.js"
-            ]
-          },
-          "helpers": {
-            "files": [
-              "LightProbeHelper.js",
-              "LightProbeHelperGPU.js",
-              "OctreeHelper.js",
-              "PositionalAudioHelper.js",
-              "RapierHelper.js",
-              "RectAreaLightHelper.js",
-              "TextureHelper.js",
-              "TextureHelperGPU.js",
-              "VertexNormalsHelper.js",
-              "VertexTangentsHelper.js",
-              "ViewHelper.js"
-            ]
-          },
-          "inspector": {
-            "files": [
-              "Inspector.js",
-              "RendererInspector.js"
-            ],
-            "tabs": {
-              "files": [
-                "Console.js",
-                "Parameters.js",
-                "Performance.js",
-                "Viewer.js"
-              ]
-            },
-            "ui": {
-              "files": [
-                "Graph.js",
-                "Item.js",
-                "List.js",
-                "Profiler.js",
-                "Style.js",
-                "Tab.js",
-                "utils.js",
-                "Values.js"
-              ]
-            }
-          },
-          "interactive": {
-            "files": [
-              "HTMLMesh.js",
-              "InteractiveGroup.js",
-              "SelectionBox.js",
-              "SelectionHelper.js"
-            ]
-          },
-          "libs": {
-            "files": [
-              "ammo.wasm.js",
-              "ammo.wasm.wasm",
-              "chevrotain.module.min.js",
-              "demuxer_mp4.js",
-              "ecsy.module.js",
-              "fflate.module.js",
-              "ktx-parse.module.js",
-              "lil-gui.module.min.js",
-              "lottie_canvas.module.js",
-              "meshopt_decoder.module.js",
-              "mikktspace.module.js",
-              "motion-controllers.module.js",
-              "opentype.module.js",
-              "potpack.module.js",
-              "stats.module.js",
-              "surfaceNet.js",
-              "tween.module.js",
-              "utif.module.js",
-              "zstddec.module.js"
-            ],
-            "basis": {
-              "files": [
-                "basis_transcoder.js",
-                "basis_transcoder.wasm",
-                "README.md"
-              ]
-            },
-            "draco": {
-              "files": [
-                "draco_decoder.js",
-                "draco_decoder.wasm",
-                "draco_encoder.js",
-                "draco_wasm_wrapper.js",
-                "README.md"
-              ],
-              "gltf": {
-                "files": [
-                  "draco_decoder.js",
-                  "draco_decoder.wasm",
-                  "draco_encoder.js",
-                  "draco_wasm_wrapper.js"
-                ]
-              }
-            },
-            "rhino3dm": {
-              "files": [
-                "rhino3dm.js",
-                "rhino3dm.module.js",
-                "rhino3dm.wasm"
-              ]
-            }
-          },
-          "lighting": {
-            "files": [
-              "TiledLighting.js"
-            ]
-          },
-          "lights": {
-            "files": [
-              "LightProbeGenerator.js",
-              "RectAreaLightTexturesLib.js",
-              "RectAreaLightUniformsLib.js"
-            ]
-          },
-          "lines": {
-            "files": [
-              "Line2.js",
-              "LineGeometry.js",
-              "LineMaterial.js",
-              "LineSegments2.js",
-              "LineSegmentsGeometry.js",
-              "Wireframe.js",
-              "WireframeGeometry2.js"
-            ],
-            "webgpu": {
-              "files": [
-                "Line2.js",
-                "LineSegments2.js",
-                "Wireframe.js"
-              ]
-            }
-          },
           "loaders": {
             "files": [
-              "3DMLoader.js",
-              "3MFLoader.js",
-              "AMFLoader.js",
-              "BVHLoader.js",
-              "ColladaLoader.js",
-              "DDSLoader.js",
-              "DRACOLoader.js",
-              "EXRLoader.js",
-              "FBXLoader.js",
-              "FontLoader.js",
-              "GCodeLoader.js",
-              "GLTFLoader.js",
-              "HDRCubeTextureLoader.js",
-              "HDRLoader.js",
-              "IESLoader.js",
-              "KMZLoader.js",
-              "KTX2Loader.js",
-              "KTXLoader.js",
-              "LDrawLoader.js",
-              "LottieLoader.js",
-              "LUT3dlLoader.js",
-              "LUTCubeLoader.js",
-              "LUTImageLoader.js",
-              "LWOLoader.js",
-              "MaterialXLoader.js",
-              "MD2Loader.js",
-              "MDDLoader.js",
-              "MTLLoader.js",
-              "NRRDLoader.js",
-              "OBJLoader.js",
-              "PCDLoader.js",
-              "PDBLoader.js",
-              "PLYLoader.js",
-              "PVRLoader.js",
-              "RGBELoader.js",
-              "STLLoader.js",
-              "SVGLoader.js",
-              "TDSLoader.js",
-              "TGALoader.js",
-              "TIFFLoader.js",
-              "TTFLoader.js",
-              "UltraHDRLoader.js",
-              "USDLoader.js",
-              "USDZLoader.js",
-              "VOXLoader.js",
-              "VRMLLoader.js",
-              "VTKLoader.js",
-              "XYZLoader.js"
-            ],
-            "lwo": {
-              "files": [
-                "IFFParser.js",
-                "LWO2Parser.js",
-                "LWO3Parser.js"
-              ]
-            },
-            "usd": {
-              "files": [
-                "USDAParser.js",
-                "USDCParser.js"
-              ]
-            }
-          },
-          "materials": {
-            "files": [
-              "LDrawConditionalLineMaterial.js",
-              "LDrawConditionalLineNodeMaterial.js",
-              "MeshGouraudMaterial.js",
-              "MeshPostProcessingMaterial.js",
-              "WoodNodeMaterial.js"
+              "GLTFLoader.js"
             ]
-          },
-          "math": {
-            "files": [
-              "Capsule.js",
-              "ColorConverter.js",
-              "ColorSpaces.js",
-              "ConvexHull.js",
-              "ImprovedNoise.js",
-              "Lut.js",
-              "MeshSurfaceSampler.js",
-              "OBB.js",
-              "Octree.js",
-              "SimplexNoise.js"
-            ]
-          },
-          "misc": {
-            "files": [
-              "ConvexObjectBreaker.js",
-              "GPUComputationRenderer.js",
-              "Gyroscope.js",
-              "MD2Character.js",
-              "MD2CharacterComplex.js",
-              "MorphAnimMesh.js",
-              "MorphBlendMesh.js",
-              "ProgressiveLightMap.js",
-              "ProgressiveLightMapGPU.js",
-              "RollerCoaster.js",
-              "TubePainter.js",
-              "Volume.js",
-              "VolumeSlice.js"
-            ]
-          },
-          "modifiers": {
-            "files": [
-              "CurveModifier.js",
-              "CurveModifierGPU.js",
-              "EdgeSplitModifier.js",
-              "SimplifyModifier.js",
-              "TessellateModifier.js"
-            ]
-          },
-          "objects": {
-            "files": [
-              "GroundedSkybox.js",
-              "Lensflare.js",
-              "LensflareMesh.js",
-              "MarchingCubes.js",
-              "Reflector.js",
-              "ReflectorForSSRPass.js",
-              "Refractor.js",
-              "ShadowMesh.js",
-              "Sky.js",
-              "SkyMesh.js",
-              "Water.js",
-              "Water2.js",
-              "Water2Mesh.js",
-              "WaterMesh.js"
-            ]
-          },
-          "offscreen": {
-            "files": [
-              "jank.js",
-              "offscreen.js",
-              "scene.js"
-            ]
-          },
-          "physics": {
-            "files": [
-              "AmmoPhysics.js",
-              "JoltPhysics.js",
-              "RapierPhysics.js"
-            ]
-          },
-          "postprocessing": {
-            "files": [
-              "AfterimagePass.js",
-              "BloomPass.js",
-              "BokehPass.js",
-              "ClearPass.js",
-              "CubeTexturePass.js",
-              "DotScreenPass.js",
-              "EffectComposer.js",
-              "FilmPass.js",
-              "FXAAPass.js",
-              "GlitchPass.js",
-              "GTAOPass.js",
-              "HalftonePass.js",
-              "LUTPass.js",
-              "MaskPass.js",
-              "OutlinePass.js",
-              "OutputPass.js",
-              "Pass.js",
-              "RenderPass.js",
-              "RenderPixelatedPass.js",
-              "RenderTransitionPass.js",
-              "SAOPass.js",
-              "SavePass.js",
-              "ShaderPass.js",
-              "SMAAPass.js",
-              "SSAARenderPass.js",
-              "SSAOPass.js",
-              "SSRPass.js",
-              "TAARenderPass.js",
-              "TexturePass.js",
-              "UnrealBloomPass.js"
-            ]
-          },
-          "renderers": {
-            "files": [
-              "CSS2DRenderer.js",
-              "CSS3DRenderer.js",
-              "Projector.js",
-              "SVGRenderer.js"
-            ]
-          },
-          "shaders": {
-            "files": [
-              "ACESFilmicToneMappingShader.js",
-              "AfterimageShader.js",
-              "BasicShader.js",
-              "BleachBypassShader.js",
-              "BlendShader.js",
-              "BokehShader.js",
-              "BokehShader2.js",
-              "BrightnessContrastShader.js",
-              "ColorCorrectionShader.js",
-              "ColorifyShader.js",
-              "ConvolutionShader.js",
-              "CopyShader.js",
-              "DepthLimitedBlurShader.js",
-              "DigitalGlitch.js",
-              "DOFMipMapShader.js",
-              "DotScreenShader.js",
-              "ExposureShader.js",
-              "FilmShader.js",
-              "FocusShader.js",
-              "FreiChenShader.js",
-              "FXAAShader.js",
-              "GammaCorrectionShader.js",
-              "GodRaysShader.js",
-              "GTAOShader.js",
-              "HalftoneShader.js",
-              "HorizontalBlurShader.js",
-              "HorizontalTiltShiftShader.js",
-              "HueSaturationShader.js",
-              "KaleidoShader.js",
-              "LuminosityHighPassShader.js",
-              "LuminosityShader.js",
-              "MirrorShader.js",
-              "NormalMapShader.js",
-              "OutputShader.js",
-              "PoissonDenoiseShader.js",
-              "RGBShiftShader.js",
-              "SAOShader.js",
-              "SepiaShader.js",
-              "SMAAShader.js",
-              "SobelOperatorShader.js",
-              "SSAOShader.js",
-              "SSRShader.js",
-              "SubsurfaceScatteringShader.js",
-              "TechnicolorShader.js",
-              "ToonShader.js",
-              "TriangleBlurShader.js",
-              "UnpackDepthRGBAShader.js",
-              "VelocityShader.js",
-              "VerticalBlurShader.js",
-              "VerticalTiltShiftShader.js",
-              "VignetteShader.js",
-              "VolumeShader.js",
-              "WaterRefractionShader.js"
-            ]
-          },
-          "textures": {
-            "files": [
-              "FlakesTexture.js"
-            ]
-          },
-          "transpiler": {
-            "files": [
-              "AST.js",
-              "GLSLDecoder.js",
-              "Linker.js",
-              "ShaderToyDecoder.js",
-              "Transpiler.js",
-              "TranspilerUtils.js",
-              "TSLEncoder.js",
-              "WGSLEncoder.js"
-            ]
-          },
-          "tsl": {
-            "display": {
-              "files": [
-                "AfterImageNode.js",
-                "AnaglyphPassNode.js",
-                "AnamorphicNode.js",
-                "BleachBypass.js",
-                "BloomNode.js",
-                "boxBlur.js",
-                "ChromaticAberrationNode.js",
-                "DenoiseNode.js",
-                "DepthOfFieldNode.js",
-                "DotScreenNode.js",
-                "FilmNode.js",
-                "FXAANode.js",
-                "GaussianBlurNode.js",
-                "GTAONode.js",
-                "hashBlur.js",
-                "LensflareNode.js",
-                "Lut3DNode.js",
-                "MotionBlur.js",
-                "OutlineNode.js",
-                "ParallaxBarrierPassNode.js",
-                "PixelationPassNode.js",
-                "radialBlur.js",
-                "RGBShiftNode.js",
-                "Sepia.js",
-                "SMAANode.js",
-                "SobelOperatorNode.js",
-                "SSAAPassNode.js",
-                "SSGINode.js",
-                "SSRNode.js",
-                "SSSNode.js",
-                "StereoCompositePassNode.js",
-                "StereoPassNode.js",
-                "TRAANode.js",
-                "TransitionNode.js"
-              ]
-            },
-            "lighting": {
-              "files": [
-                "TiledLightsNode.js"
-              ]
-            },
-            "math": {
-              "files": [
-                "Bayer.js"
-              ]
-            },
-            "shadows": {
-              "files": [
-                "TileShadowNode.js",
-                "TileShadowNodeHelper.js"
-              ]
-            },
-            "utils": {
-              "files": [
-                "Raymarching.js"
-              ]
-            }
           },
           "utils": {
             "files": [
               "BufferGeometryUtils.js",
-              "CameraUtils.js",
-              "GeometryCompressionUtils.js",
-              "GeometryUtils.js",
-              "LDrawUtils.js",
-              "SceneOptimizer.js",
-              "SceneUtils.js",
-              "ShadowMapViewer.js",
-              "ShadowMapViewerGPU.js",
-              "SkeletonUtils.js",
-              "SortUtils.js",
-              "UVsDebug.js",
-              "WebGLTextureUtils.js",
-              "WebGPUTextureUtils.js",
-              "WorkerPool.js"
-            ]
-          },
-          "webxr": {
-            "files": [
-              "ARButton.js",
-              "OculusHandModel.js",
-              "OculusHandPointerModel.js",
-              "Text2D.js",
-              "VRButton.js",
-              "XRButton.js",
-              "XRControllerModelFactory.js",
-              "XREstimatedLight.js",
-              "XRHandMeshModel.js",
-              "XRHandModelFactory.js",
-              "XRHandPrimitiveModel.js",
-              "XRPlanes.js"
+              "SkeletonUtils.js"
             ]
           }
         }
@@ -1423,7 +819,9 @@
         "howler.core.min.js",
         "howler.min.js",
         "three.core.min.js",
-        "three.module.min.js"
+        "three.module.min.js",
+        "three.tsl.min.js",
+        "three.webgpu.min.js"
       ],
       "localforage": {
         "drivers": {
@@ -1583,5 +981,158 @@
         "default.vert"
       ]
     }
+  },
+  "Tutorial": {
+    "files": [
+      "animations.json",
+      "armors.json",
+      "battleSystem.json",
+      "classes.json",
+      "commonEvents.json",
+      "dlcs.json",
+      "fonts.json",
+      "game.rpmg",
+      "heroes.json",
+      "items.json",
+      "keyboard.json",
+      "langs.json",
+      "monsters.json",
+      "pictures.json",
+      "scripts.json",
+      "settings.json",
+      "shapes.json",
+      "skills.json",
+      "songs.json",
+      "specialElements.json",
+      "status.json",
+      "system.json",
+      "tilesets.json",
+      "titlescreenGameover.json",
+      "treeMaps.json",
+      "troops.json",
+      "variables.json",
+      "videos.json",
+      "weapons.json"
+    ],
+    "Fonts": {},
+    "Images": {
+      "HUD": {
+        "Animations": {},
+        "Bars": {},
+        "Facesets": {},
+        "GameOver": {},
+        "Icons": {},
+        "Pictures": {},
+        "TitleScreen": {},
+        "WindowSkins": {}
+      },
+      "Textures2D": {
+        "Autotiles": {},
+        "Battlers": {},
+        "Characters": {},
+        "Mountains": {},
+        "Objects3D": {},
+        "Particles": {},
+        "SkyBoxes": {},
+        "Tilesets": {},
+        "Walls": {}
+      }
+    },
+    "Maps": {
+      "MAP0001": {
+        "files": [
+          "0_-1_0.json",
+          "0_-1_1.json",
+          "0_-1_2.json",
+          "0_-1_3.json",
+          "0_0_0.json",
+          "0_0_1.json",
+          "0_0_2.json",
+          "0_0_3.json",
+          "1_-1_0.json",
+          "1_-1_1.json",
+          "1_-1_2.json",
+          "1_-1_3.json",
+          "1_0_0.json",
+          "1_0_1.json",
+          "1_0_2.json",
+          "1_0_3.json",
+          "2_-1_0.json",
+          "2_-1_1.json",
+          "2_-1_2.json",
+          "2_-1_3.json",
+          "2_0_0.json",
+          "2_0_1.json",
+          "2_0_2.json",
+          "2_0_3.json",
+          "3_-1_0.json",
+          "3_-1_1.json",
+          "3_-1_2.json",
+          "3_-1_3.json",
+          "3_0_0.json",
+          "3_0_1.json",
+          "3_0_2.json",
+          "3_0_3.json",
+          "4_-1_0.json",
+          "4_-1_1.json",
+          "4_-1_2.json",
+          "4_-1_3.json",
+          "4_0_0.json",
+          "4_0_1.json",
+          "4_0_2.json",
+          "4_0_3.json",
+          "infos.json"
+        ],
+        "temp": {},
+        "temp-undo-redo": {
+          "files": [
+            "index"
+          ]
+        }
+      },
+      "MAP0002": {
+        "files": [
+          "0_0_0.json",
+          "infos.json"
+        ],
+        "temp": {},
+        "temp-undo-redo": {
+          "files": [
+            "index"
+          ]
+        }
+      },
+      "MAP0003": {
+        "files": [
+          "0_0_0.json",
+          "infos.json"
+        ],
+        "temp": {},
+        "temp-undo-redo": {
+          "files": [
+            "index"
+          ]
+        }
+      }
+    },
+    "Plugins": {},
+    "Saves": {},
+    "Shapes": {
+      "Collisions": {},
+      "MTL": {},
+      "OBJ": {}
+    },
+    "Songs": {
+      "BackgroundSounds": {},
+      "MusicEffects": {},
+      "Musics": {},
+      "Sounds": {}
+    },
+    "Styles": {
+      "files": [
+        "fonts.css"
+      ]
+    },
+    "Videos": {}
   }
 }
