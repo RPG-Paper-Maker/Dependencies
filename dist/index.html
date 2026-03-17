@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.ico" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+		<meta name="theme-color" content="#000000" />
+		<title>RPG Paper Maker</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+			#three-d {
+				margin: 0;
+				padding: 0;
+				overflow: auto;
+				position: absolute;
+			}
+			#video-container {
+				margin: 0;
+				padding: 0;
+				overflow: auto;
+				position: absolute;
+			}
+			#hud {
+				position: absolute;
+				margin: 0;
+				padding: 0;
+			}
+			#rendering {
+				display: none;
+				overflow: hidden;
+				background-color: green;
+			}
+			.hidden {
+				display: none;
+			}
+			canvas {
+				font-smooth: never;
+				-webkit-font-smoothing: none;
+				image-rendering: pixelated;
+			}
+		</style>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "./Scripts/Libs/three.module.min.js",
+					"three/examples/jsm/loaders/GLTFLoader": "./Scripts/Libs/examples/jsm/loaders/GLTFLoader.js"
+				}
+			}
+		</script>
+		<script type="module" crossorigin src="./assets/index-DH_gQ_bb.js"></script>
+		<link rel="modulepreload" crossorigin href="./assets/redux-Ci1AGJDF.js">
+		<link rel="modulepreload" crossorigin href="./assets/vendor-CNWyb7wd.js">
+		<link rel="modulepreload" crossorigin href="./assets/toastify-BWGsCvlG.js">
+		<link rel="modulepreload" crossorigin href="./assets/icons-CueZRmd2.js">
+		<link rel="modulepreload" crossorigin href="./assets/zip-W__qVA-W.js">
+		<link rel="modulepreload" crossorigin href="./assets/storage-BVPs3Vv2.js">
+		<link rel="stylesheet" crossorigin href="./assets/index-kBtUKnFU.css">
+	</head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="root"></div>
+	</body>
+</html>
