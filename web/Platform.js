@@ -137,8 +137,8 @@ var body = document.body,
 	html = document.documentElement;
 Platform.screenHeight = Platform.IS_DESKTOP
 	? window.screen.height
-	: window.screenHeight ??
-	  Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+	: (window.screenHeight ??
+		Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight));
 Platform.MODE_TEST = window.battleTest;
 Platform.MODE_TEST_BATTLE_TROOP = 'battleTroop';
 Platform.MODE_TEST_SHOW_TEXT_PREVIEW = 'showTextPreview';
@@ -146,8 +146,12 @@ Platform.canvas3D = document.getElementById('three-d');
 Platform.canvasHUD = document.getElementById('hud');
 Platform.canvasVideos = document.getElementById('video-container');
 Platform.canvasRendering = document.getElementById('rendering');
-Platform.ctx = Platform.canvasHUD.getContext('2d', { willReadFrequently: true });
-Platform.ctxr = Platform.canvasRendering.getContext('2d', { willReadFrequently: true });
+Platform.ctx = Platform.canvasHUD.getContext('2d', {
+	willReadFrequently: true,
+});
+Platform.ctxr = Platform.canvasRendering.getContext('2d', {
+	willReadFrequently: true,
+});
 /**
  *  Set window title.
  *  @static
@@ -182,7 +186,11 @@ Platform.quit = function () {
  *  @returns {Promise<boolean>}
  */
 Platform.fileExists = async function (path) {
-	return (await localforage.getItem(path)) !== null;
+	if (Platform.IS_DESKTOP) {
+		return await window.ipcRenderer.invoke('check-file-exists', path);
+	} else {
+		return (await localforage.getItem(path)) !== null;
+	}
 };
 
 export { Platform };
