@@ -1,0 +1,1 @@
+import{Dt as e,Pt as t,an as n}from"./ToasterError-ekcCI2Nq.js";import{Gn as r}from"./Editor-B5F8tvyJ.js";var i=class{static async update(){let i=r.current.getPath(),a=n.join(i,`Test`);await e(a)||await t(a)}};export{i as ProjectUpdater_3_0_36};
