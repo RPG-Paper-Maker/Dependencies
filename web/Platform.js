@@ -144,9 +144,14 @@ Platform.MODE_TEST_BATTLE_TROOP = 'battleTroop';
 Platform.MODE_TEST_SHOW_TEXT_PREVIEW = 'showTextPreview';
 Platform.canvas3D = document.getElementById('three-d');
 Platform.canvasHUD = document.getElementById('hud');
+Platform.canvasHUDBelow = document.getElementById('hud-below');
+Platform.canvasHUDBelow.style.position = 'absolute';
 Platform.canvasVideos = document.getElementById('video-container');
 Platform.canvasRendering = document.getElementById('rendering');
 Platform.ctx = Platform.canvasHUD.getContext('2d', {
+	willReadFrequently: true,
+});
+Platform.ctxBelow = Platform.canvasHUDBelow.getContext('2d', {
 	willReadFrequently: true,
 });
 Platform.ctxr = Platform.canvasRendering.getContext('2d', {
