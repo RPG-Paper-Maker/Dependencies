@@ -3,37 +3,37 @@
     "files": [
       "alpha-CjRbbULc.svg",
       "audio-CnYzFSMc.js",
+      "Editor-BcfCSeTA.js",
       "Editor-DAefELGn.css",
-      "Editor-DM75Tq1H.js",
-      "Game-BdEiNSMu.js",
+      "Game-CDSefNTK.js",
       "i18n-DhuIG3gB.js",
-      "index-EaO8WsjC.js",
+      "index-BPYdCz7O.js",
       "index-kGkAW_xw.css",
-      "MainMenuBar-7nQPZULJ.js",
       "MainMenuBar-BF8KGcTO.css",
-      "PanelLoading-DtBbsoWL.js",
+      "MainMenuBar-CKKlJn7p.js",
+      "PanelLoading-DLrZQrYr.js",
+      "PanelMain-BmbzdqoR.js",
       "PanelMain-CWkh9V-j.css",
-      "PanelMain-LUnsm8Of.js",
-      "ProjectUpdater-CnsgzkRV.js",
-      "ProjectUpdater_3_0_0-C1TnbASd.js",
-      "ProjectUpdater_3_0_1-xtcLu_i5.js",
-      "ProjectUpdater_3_0_19-BJjub-w3.js",
-      "ProjectUpdater_3_0_22-B8F8BR7M.js",
-      "ProjectUpdater_3_0_24-CcEenhGf.js",
-      "ProjectUpdater_3_0_26-DRKSNIjE.js",
-      "ProjectUpdater_3_0_27-C2gpJQCl.js",
-      "ProjectUpdater_3_0_33-CFIh1WB-.js",
-      "ProjectUpdater_3_0_34-B3nMkEOM.js",
-      "ProjectUpdater_3_0_36-BGkgfO_z.js",
-      "ProjectUpdater_3_0_4-Bul5oNwV.js",
+      "ProjectUpdater-Cg7tHiIn.js",
+      "ProjectUpdater_3_0_0--p9eooiX.js",
+      "ProjectUpdater_3_0_1-D1gbgp9Q.js",
+      "ProjectUpdater_3_0_19-D6YMOApD.js",
+      "ProjectUpdater_3_0_22-BBqmivBr.js",
+      "ProjectUpdater_3_0_24-ftG1Jlml.js",
+      "ProjectUpdater_3_0_26-BsQyMd2r.js",
+      "ProjectUpdater_3_0_27-CoPoI1I-.js",
+      "ProjectUpdater_3_0_33-DckaVEsl.js",
+      "ProjectUpdater_3_0_34-Od6b68jL.js",
+      "ProjectUpdater_3_0_36-x3v_RCoM.js",
+      "ProjectUpdater_3_0_4-Bb3NpoAU.js",
       "ProjectUpdater_3_0_44-CdjHup8K.js",
-      "ProjectUpdater_3_0_45-C_lgFZKl.js",
-      "ProjectUpdater_3_0_48-3sQgem9D.js",
-      "ProjectUpdater_3_0_49-DVt2Q9Uw.js",
-      "ProjectUpdater_3_0_50-L5HuZ-tr.js",
-      "ProjectUpdater_3_0_58-B5BYG9Bo.js",
-      "ProjectUpdater_3_0_65-BOoDp60E.js",
-      "ProjectUpdater_3_1_4-DFjvFFpt.js",
+      "ProjectUpdater_3_0_45-jLyNWNZc.js",
+      "ProjectUpdater_3_0_48-C4YOf8I6.js",
+      "ProjectUpdater_3_0_49-BZAL5O5s.js",
+      "ProjectUpdater_3_0_50-enc5FNg8.js",
+      "ProjectUpdater_3_0_58-D6MVokSH.js",
+      "ProjectUpdater_3_0_65-CceomYVR.js",
+      "ProjectUpdater_3_1_4-DnJR2Tan.js",
       "redux-C1K2rC2c.js",
       "rolldown-runtime-DWdDZTNf.js",
       "storage-CDXyKa47.js",
@@ -102,7 +102,8 @@
         "TitleScreen": {
           "files": [
             "background-logo.png",
-            "background.png"
+            "background.png",
+            "logo.png"
           ]
         },
         "WindowSkins": {
@@ -512,7 +513,11 @@
         ]
       }
     },
-    "Videos": {}
+    "Videos": {
+      "files": [
+        "titlescreen.mov"
+      ]
+    }
   },
   "files": [
     "date",
