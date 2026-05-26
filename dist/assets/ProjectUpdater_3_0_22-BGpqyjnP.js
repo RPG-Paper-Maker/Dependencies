@@ -1,1 +1,0 @@
-import{en as e,qt as t,sn as n}from"./ToasterError-BZ2OMDjF.js";import{Gn as r}from"./Editor-wccjrj1f.js";var i=class{static async update(){let i=r.current.getPath(),a=await t(n.join(i,`system.json`));if(a){for(let e of a.colors)e.a/=255;await e(n.join(i,`system.json`),a)}}};export{i as ProjectUpdater_3_0_22};

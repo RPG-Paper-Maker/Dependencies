@@ -1,1 +1,0 @@
-import{ProjectUpdater_3_0_45 as e}from"./ProjectUpdater_3_0_45-CMdsm2Lp.js";var t=class{static async update(){await e.update()}};export{t as ProjectUpdater_3_0_58};

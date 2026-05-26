@@ -1,1 +1,0 @@
-var e=class{static async update(){}};export{e as ProjectUpdater_3_0_44};

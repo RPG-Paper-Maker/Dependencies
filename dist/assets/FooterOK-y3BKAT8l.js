@@ -1,1 +1,0 @@
-import{j as o,B as s}from"./index-Dh5hn5QO.js";import"./toastify-Btf8O7yI.js";import{K as n}from"./Editor-tBUqGyHg.js";import{u as i}from"./i18n-BGHR_dG-.js";function p({onOK:t}){const{t:r}=i();return o.jsx("div",{className:"footerButtons",children:o.jsx(n,{buttonType:s.PRIMARY,onClick:t,children:r("ok")})})}export{p as F};

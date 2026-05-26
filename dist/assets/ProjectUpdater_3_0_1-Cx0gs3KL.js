@@ -1,1 +1,0 @@
-import{Gt as e,Qt as t,an as n}from"./ToasterError-ekcCI2Nq.js";import{Gn as r}from"./Editor-B5F8tvyJ.js";var i=class{static async update(){let i=r.current.getPath(),a=await e(n.join(i,`system.json`));a&&(a.pathBR=n.join(n.DIST,`BR`),a.pathDLCS=n.join(n.DIST,`DLCs`),await t(n.join(i,`system.json`),a))}};export{i as ProjectUpdater_3_0_1};

@@ -1,1 +1,0 @@
-import{Dt as e,Ft as t,on as n}from"./index-Bf59urC5.js";import{Bn as r}from"./Editor-BEEfmkoR.js";var i=class{static async update(){let i=r.current.getPath(),a=n.join(i,`Test`);await e(a)||await t(a)}};export{i as ProjectUpdater_3_0_36};

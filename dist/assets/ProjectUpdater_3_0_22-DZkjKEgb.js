@@ -1,1 +1,0 @@
-import{$t as e,Kt as t,on as n}from"./index-BXSha7Io.js";import{Bn as r}from"./Editor-CQ4WIQUP.js";var i=class{static async update(){let i=r.current.getPath(),a=await t(n.join(i,`system.json`));if(a){for(let e of a.colors)e.a/=255;await e(n.join(i,`system.json`),a)}}};export{i as ProjectUpdater_3_0_22};

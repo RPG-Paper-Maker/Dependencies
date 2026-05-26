@@ -1,1 +1,0 @@
-import{Gt as e,Qt as t,an as n,dr as r}from"./ToasterError-Dyxe9FSQ.js";import{Gn as i}from"./Editor-Bd5eECw9.js";var a=class{static async update(){if(r.IS_DESKTOP){let r=i.current.getPath(),a=await e(n.join(r,`system.json`));a&&(a.pathDLCS=n.join(window.env.appPath,`DLCs`),await t(n.join(r,`system.json`),a))}}};export{a as ProjectUpdater_3_0_33};
