@@ -1,1 +1,0 @@
-import{fn as e,in as t,jt as n}from"./ToasterError-BlNKKXRE.js";import{or as r}from"./Editor-jty5nWZ4.js";var i=class{static async update(){let i=r.current.getPath(),a=e.join(i,`backups`);await n(a)&&await t(a)}};export{i as ProjectUpdater_3_0_34};
