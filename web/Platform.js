@@ -32,7 +32,16 @@ class Platform {
 		}
 		if (!forcePath && Platform.WEB_DEV) {
 			const file = await localforage.getItem(path);
-			return file === null ? null : file.c;
+			if (file === null) {
+				return null;
+			}
+			if (file.cc > 0) {
+				const chunks = await Promise.all(
+					Array.from({ length: file.cc }, (_, index) => localforage.getItem(`${path}.chunk.${index}`)),
+				);
+				return chunks.join('');
+			}
+			return file.c;
 		}
 		return await IO.openFile(path);
 	}
