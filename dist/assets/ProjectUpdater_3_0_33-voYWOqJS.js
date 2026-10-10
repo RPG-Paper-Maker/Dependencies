@@ -1,1 +1,0 @@
-import{Sr as e,en as t,pn as n,sn as r}from"./index-D30wuXNk.js";import{_r as i}from"./Editor-DBa4XLiA.js";var a=class{static async update(){if(e.IS_DESKTOP){let e=i.current.getPath(),a=await t(n.join(e,`system.json`));a&&(a.pathDLCS=n.join(window.env.appPath,`DLCs`),await r(n.join(e,`system.json`),a))}}};export{a as ProjectUpdater_3_0_33};
