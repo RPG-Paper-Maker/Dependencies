@@ -135,7 +135,7 @@ class Platform {
 	 *  @returns {boolean}
 	 */
 	static isModeTestNormal() {
-		return !Platform.IS_DESKTOP || Platform.MODE_TEST !== Platform.MODE_TEST_BATTLE_TROOP;
+		return Platform.MODE_TEST !== Platform.MODE_TEST_BATTLE_TROOP;
 	}
 }
 Platform.WEB_DEV = !!window.rpgPaperMakerProjectLocation;
