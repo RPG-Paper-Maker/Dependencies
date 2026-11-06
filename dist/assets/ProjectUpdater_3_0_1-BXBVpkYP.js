@@ -1,0 +1,1 @@
+import{en as e,pn as t,sn as n}from"./index-g0l8x0Wa.js";import{Cr as r}from"./Editor-Dgo14tZa.js";var i=class{static async update(){let i=r.current.getPath(),a=await e(t.join(i,`system.json`));a&&(a.pathBR=t.join(t.DIST,`BR`),a.pathDLCS=t.join(t.DIST,`DLCs`),await n(t.join(i,`system.json`),a))}};export{i as ProjectUpdater_3_0_1};
