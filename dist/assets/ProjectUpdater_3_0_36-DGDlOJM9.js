@@ -1,0 +1,1 @@
+import{Mt as e,Vt as t,pn as n}from"./index-CYsmfML5.js";import{Cr as r}from"./Editor-BosELFsB.js";var i=class{static async update(){let i=r.current.getPath(),a=n.join(i,`Test`);await e(a)||await t(a)}};export{i as ProjectUpdater_3_0_36};

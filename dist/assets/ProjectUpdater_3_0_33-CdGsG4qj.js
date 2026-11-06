@@ -1,1 +1,0 @@
-import{Sr as e,en as t,pn as n,sn as r}from"./index-Bw-LOJQ2.js";import{Sr as i}from"./Editor-DIdV0jhp.js";var a=class{static async update(){if(e.IS_DESKTOP){let e=i.current.getPath(),a=await t(n.join(e,`system.json`));a&&(a.pathDLCS=n.join(window.env.appPath,`DLCs`),await r(n.join(e,`system.json`),a))}}};export{a as ProjectUpdater_3_0_33};
