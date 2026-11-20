@@ -9,8 +9,7 @@
         http://rpg-paper-maker.com/index.php/eula.
 */
 import localforage from '../Libs/localforage/localforage.js';
-import { Data } from '../index.js';
-import { Constants, IO } from './index.js';
+import { Constants, Data, IO } from '../main.js';
 localforage.config({ name: 'RPGPaperMaker' });
 
 /**
