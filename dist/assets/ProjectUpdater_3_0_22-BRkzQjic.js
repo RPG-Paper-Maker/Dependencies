@@ -1,1 +1,0 @@
-import{cn as e,mn as t,tn as n}from"./index-DohDj_Oa.js";import{Or as r}from"./Editor-CNEvGht0.js";var i=class{static async update(){let i=r.current.getPath(),a=await n(t.join(i,`system.json`));if(a){for(let e of a.colors)e.a/=255;await e(t.join(i,`system.json`),a)}}};export{i as ProjectUpdater_3_0_22};
