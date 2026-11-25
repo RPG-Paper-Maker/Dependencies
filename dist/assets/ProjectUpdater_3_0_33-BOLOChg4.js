@@ -1,1 +1,0 @@
-import{cn as e,hn as t,mn as n,tn as r}from"./index-BvrRxM7q.js";import{kr as i}from"./Editor-BxFzrWjj.js";var a=class{static async update(){if(t.IS_DESKTOP){let t=i.current.getPath(),a=await r(n.join(t,`system.json`));a&&(a.pathDLCS=n.join(window.env.appPath,`DLCs`),await e(n.join(t,`system.json`),a))}}};export{a as ProjectUpdater_3_0_33};
